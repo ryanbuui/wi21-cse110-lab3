@@ -52,7 +52,7 @@ h3 + form[action=""] {
     "fontsize"
     "footer";
   grid-gap: 10px;
-  justify-self: center;
+  justify-items: center;
 }
 .select-container {
   grid-area: style;
