@@ -8,14 +8,16 @@
 </head>
 <body>
     <header id="top">
-        <h1>Ryan Bui</h1>
-        <nav>
-            <ol>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tech">Technologies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ol>
-        </nav>
+        <div class="header-container">
+            <h1>Ryan Bui</h1>
+            <nav>
+                <ol>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tech">Technologies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+            </nav>  
+        </div>
     </header>
     <main>
         <div class="picture-img">
@@ -45,9 +47,8 @@
                 </p>
             </div>
             <div id="course-work">
-                <h3>Coursework</h3>
-                <table>
-                    <caption>Courses</caption>
+                <table id="classes">
+                    <caption>Relevant Courses</caption>
                     <colgroup>
                         <col span="5">
                     </colgroup>
@@ -119,43 +120,46 @@
     <hr>
     <section class="options">
         <h3>Website Options</h3>
-        <form>
-            <label>Style:</label>
-            <select name="styles">
-                <option value="default">default</option>
-                <optgroup label="Bright">
-                    <option value="light-grey">light-grey</option>
-                    <option value="light-slate">light-slate</option>
-                </optgroup>
-                <optgroup label="Dark">
-                    <option value="dark-grey">dark-grey</option>
-                    <option value="dark-slate">dark-slate</option>
-                </optgroup> 
-            </select>
-            <br>
-            <label>Background Color:</label>
-            <input type="color">
-            <br>
-            <label>Font Size:</label>
-            <input type="range">
-            <br>
-            <input type="submit">
-            <input type="reset">
+        <form action="">
+            <div class="select-container">
+                <label>Style:</label>
+                <select name="styles">
+                    <option value="default">default</option>
+                    <optgroup label="Bright">
+                        <option value="light-grey">light-grey</option>
+                        <option value="light-slate">light-slate</option>
+                    </optgroup>
+                    <optgroup label="Dark">
+                        <option value="dark-grey">dark-grey</option>
+                        <option value="dark-slate">dark-slate</option>
+                    </optgroup> 
+                </select>
+            </div>
+            <div class="bg-color-container">
+                <label>Background Color:</label>
+                <input type="color">
+            </div>
+            <div class="font-size-container">
+                <label>Font Size:</label>
+                <input type="range">
+            </div>
+            <div class="submit-reset-container">
+                <input type="submit">
+                <input type="reset">
+            </div>
         </form>
-        <br>
-        <span>Background Music:</span>
-        <br>
-        <audio controls>
-            <source src="Rocinha.mp3" type="audio/mpeg">
-        </audio>
+        <div style="display: flex; justify-content: center; margin-top: 2vh;">
+            <audio controls>
+                <source src="Rocinha.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </section>
     <hr>
     <section class="video">
-        <h3>Relaxing Video</h3>
-        <br>
         <video width="320" height="240" autoplay controls loop>
             <source src="waves.mp4" type="video/mp4">
         </video>
+        <h3>Relaxing Video</h3>
     </section>
     <footer>
         <hr>

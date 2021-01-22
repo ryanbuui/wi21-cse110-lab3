@@ -1,0 +1,76 @@
+/* --- Header --- */
+header {
+  position: sticky;
+  top: 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header-container h1 {
+  align-self: center;
+  order: 0;
+  flex-basis: auto;
+}
+.header-container nav {
+  align-self: center;
+  order: 1;
+  flex-basis: auto;
+}
+
+/*  Navbar  */
+nav ol li {
+  display: inline;
+  position: relative;
+}
+
+/* --- Main --- */
+/* self-image */
+div.picture-img {
+  text-align: center;
+}
+
+/* relevant info */
+.relevant-information h2 {
+  text-align: center;
+  display: block;
+}
+#classes {
+  text-align: center;
+}
+
+/* website options */
+.options > h3 {
+  text-align: center;
+}
+h3 + form[action=""] {
+  display: grid;
+  grid-template-areas:
+    "style"
+    "background"
+    "fontsize"
+    "footer";
+  grid-gap: 10px;
+  justify-items: center;
+}
+.select-container {
+  grid-area: style;
+}
+.bg-color-container {
+  grid-area: background;
+}
+.font-size-container {
+  grid-area: fontsize;
+}
+.submit-reset-container {
+  grid-area: footer;
+}
+
+/* video */
+video[autoplay] {
+}
+
+video ~ h3 {
+  display: none;
+}
