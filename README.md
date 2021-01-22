@@ -1,1 +1,1 @@
-https://github.com/ryanbuui/wi21-cse110-lab3
+https://ryanbuui.github.io/wi21-cse110-lab3/
