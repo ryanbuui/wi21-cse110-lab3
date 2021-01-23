@@ -1,6 +1,7 @@
 * {
   margin: auto;
   padding: auto;
+  font-family: "Roboto";
 }
 section {
   padding: 0.5in;
@@ -13,6 +14,7 @@ header {
   width: 100%;
   height: 1.5cm;
   margin-bottom: 1rem;
+  background-color: #6fd6bc;
 }
 .header-container {
   display: flex;
@@ -23,13 +25,13 @@ header {
   align-self: flex-start;
   order: 0;
   flex-basis: auto;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 .header-container nav {
   align-self: center;
   order: 1;
   flex-basis: auto;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 /*  Navbar  */
@@ -37,6 +39,14 @@ nav ol li {
   display: inline;
   position: relative;
   margin: 0 0 0 20px;
+}
+nav ol li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s border-bottom;
+}
+nav ol li a:hover {
+  border-bottom: 2px solid blue;
 }
 
 /* --- Main --- */
@@ -50,6 +60,9 @@ div.picture-img {
 }
 
 /* relevant info */
+.relevant-information {
+  background-color: rgba(241, 241, 241, 0.918);
+}
 .relevant-information h2 {
   text-align: center;
   display: block;
@@ -60,10 +73,14 @@ div.picture-img {
 }
 .relevant-info-container-r1 div {
   padding: 1em;
-  border: solid;
+  border: 1px solid black;
   float: left;
-  width: 47%;
+  width: 45%;
   height: 20vh;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background: hsl(0, 0%, 100%);
 }
 .relevant-info-container-r2 {
   display: block;
@@ -71,10 +88,16 @@ div.picture-img {
 }
 .relevant-info-container-r2 div {
   padding: 1em;
-  border: solid;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  margin: 1%;
   float: left;
-  width: 47%;
+  width: 45%;
   height: 25vh;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background: hsl(0, 0%, 100%);
 }
 .commit-container {
   display: inline-block;
@@ -82,6 +105,9 @@ div.picture-img {
   padding-left: 25%;
   padding-right: 20%;
   padding-bottom: 2%;
+}
+.commit-container iframe {
+  background-color: white;
 }
 
 /* website options */
@@ -112,6 +138,9 @@ h3 + form[action=""] {
 }
 
 /* video */
+.video {
+  background-color: rgba(241, 241, 241, 0.918);
+}
 video[autoplay] {
   height: 100%;
   width: 100%;
@@ -129,7 +158,20 @@ video ~ h3 {
   display: flex;
   flex-direction: row;
 }
-
+#like {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 13pt;
+  background-color: #acb4ad;
+  color: white;
+}
+#like:hover,
+#like:active {
+  background-color: #6ad183;
+}
+#top-btn:active {
+  color: red;
+}
 @media screen and (max-width: 600px) {
   * {
     padding: 0;
